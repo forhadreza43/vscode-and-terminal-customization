@@ -1,0 +1,204 @@
+{
+   "diffEditor.renderSideBySide": true,
+   // editor settings
+   "editor.stickyScroll.enabled": false,
+   "editor.minimap.renderCharacters": false,
+   "editor.minimap.enabled": false,
+   "editor.autoClosingBrackets": "always",
+   "editor.autoClosingQuotes": "always",
+   "editor.allowVariableFontsInAccessibilityMode": true,
+   "editor.codeLensFontFamily": "'Operator Mono SSm Lig','Fira Code'",
+   "editor.codeLensFontSize": 15,
+   "editor.fontFamily": "'Operator Mono SSm Lig','Fira Code','Cascadia Code Light'",
+   "editor.fontWeight": "300",
+   "editor.fontSize": 16,
+   "editor.fontLigatures": true,
+   "editor.wordWrap": "on",
+   "editor.inlayHints.fontFamily": "'Operator Mono SSm Lig','Fira Code'",
+   "editor.formatOnSave": true,
+   "editor.formatOnPaste": true,
+   "editor.formatOnType": true,
+   "editor.cursorBlinking": "expand",
+   "editor.cursorSmoothCaretAnimation": "on",
+   "editor.tokenColorCustomizations": {
+      "textMateRules": [
+         {
+            "scope": [
+               //following will be in italic
+               "comment",
+               "entity.name.type.class", //class names
+               "constant", //String, Number, Boolean…, this, super
+               "storage.modifier", //static keyword
+               "storage.type.class.js", //class keyword
+               "keyword", //import, export, return…
+            ],
+            "settings": {
+               "fontStyle": "italic",
+            },
+         },
+         {
+            "scope": [
+               //following will be excluded from italics (VSCode has some defaults for italics)
+               "invalid",
+               "keyword.operator",
+               "constant.numeric.css",
+               "keyword.other.unit.px.css",
+               "constant.numeric.decimal.js",
+               "constant.numeric.json",
+            ],
+            "settings": {
+               "fontStyle": "italic",
+            },
+         },
+      ],
+   },
+   //Terminal Settings
+   "terminal.integrated.cursorBlinking": true,
+   "terminal.integrated.cursorStyle": "line",
+   "terminal.integrated.fontFamily": "'Hack Nerd Font','FiraCode Nerd Font'",
+   "terminal.integrated.defaultProfile.windows": "Git Bash",
+   "terminal.integrated.fontSize": 14,
+   "terminal.integrated.fontWeight": "500",
+   "terminal.integrated.stickyScroll.enabled": false,
+   "terminal.integrated.profiles.windows": {
+      "PowerShell": {
+         "source": "PowerShell",
+         "icon": "terminal-powershell",
+      },
+      "Command Prompt": {
+         "path": [
+            "${env:windir}\\Sysnative\\cmd.exe",
+            "${env:windir}\\System32\\cmd.exe",
+         ],
+         "args": [],
+         "icon": "terminal-cmd",
+      },
+      "Git Bash": {
+         "path": "C:\\Program Files\\Git\\bin\\bash.exe",
+         "args": ["--login", "-i"],
+      },
+   },
+   "terminal.integrated.commandsToSkipShell": [
+      "kilo-code.new.agentManagerOpen",
+      "kilo-code.new.agentManager.showTerminal",
+   ],
+
+   // terminal customization
+   "workbench.colorCustomizations": {
+      "terminal.ansiBlack": "#000000",
+      "terminal.ansiRed": "#ff628c",
+      "terminal.ansiGreen": "#3ad900",
+      "terminal.ansiYellow": "#ffc600",
+      "terminal.ansiBlue": "#0088ff",
+      "terminal.ansiMagenta": "#fb94ff",
+      "terminal.ansiCyan": "#80fcff",
+      "terminal.ansiWhite": "#ffffff",
+      "terminal.ansiBrightBlack": "#0050A4",
+      "terminal.ansiBrightRed": "#ff628c",
+      "terminal.ansiBrightGreen": "#3ad900",
+      "terminal.ansiBrightYellow": "#ffc600",
+      "terminal.ansiBrightBlue": "#0088ff",
+      "terminal.ansiBrightMagenta": "#fb94ff",
+      "terminal.ansiBrightCyan": "#80fcff",
+      "terminal.ansiBrightWhite": "#ffffff",
+      // "terminal.background": "#193549",
+      // "terminal.foreground": "#ffffff",
+      // "terminalCursor.background": "#122738",
+   },
+
+   //workbench
+   "workbench.colorTheme": "Learn with Sumit - Vintage",
+   "workbench.iconTheme": "material-icon-theme",
+   "workbench.productIconTheme": "macos-modern",
+
+   //Indent Rainbow Settings
+   "indentRainbow.indicatorStyle": "light",
+   "indentRainbow.colors": [
+      "rgba(255,255,64,0.2)",
+      "rgba(127,255,127,0.2)",
+      "rgba(255,127,255,0.2)",
+      "rgba(79,236,236,0.2)",
+   ],
+   "indentRainbow.errorColor": "rgba(255,0,0,0.0)",
+   "indentRainbow.colorOnWhiteSpaceOnly": true,
+
+   //Power Mode Settings
+   "powermode.enabled": true,
+   "powermode.combo.counterEnabled": "hide",
+   "powermode.combo.timerEnabled": "hide",
+   "powermode.shake.enabled": false,
+   "[typescriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+   },
+
+   //tailwindcss settings
+   "css.validate": false,
+   "less.validate": false,
+   "scss.validate": false,
+   "tailwindCSS.experimental.configFile": null,
+   "tailwindCSS.includeLanguages": {
+      "plaintext": "html",
+   },
+   "tailwindCSS.classAttributes": [
+      "class",
+      "className",
+      "classList",
+      "ngClass",
+   ],
+   "files.associations": {
+      "*.css": "tailwindcss",
+   },
+   "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+   },
+
+   //prettier settings
+   "prettier.printWidth": 80,
+   "prettier.tabWidth": 3,
+   "prettier.singleQuote": true,
+   "prettier.trailingComma": "es5",
+   "prettier.semi": true,
+   "diffEditor.experimental.showMoves": true,
+   "[jsonc]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+   },
+   "github.copilot.chat.newWorkspace.useContext7": true,
+   "github.copilot.nextEditSuggestions.enabled": true,
+   "cSpell.userWords": ["oklch"],
+   "[javascriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+   },
+
+   // "breadcrumbs.enabled": false,
+
+   // mcp settings
+   "chat.mcp.gallery.enabled": true,
+   "chat.mcp.serverSampling": {
+      "Global in Code: microsoft/markitdown": {
+         "allowedModels": ["copilot/auto"],
+      },
+   },
+   "js/ts.updateImportsOnFileMove.enabled": "always",
+
+   "files.autoSave": "afterDelay",
+
+   "chat.viewSessions.orientation": "stacked",
+   "kilo-code.new.showTaskTimeline": false,
+   "git.enableSmartCommit": true,
+   "git.autofetch": true,
+   "cSpell.ignoreWords": ["glowsera"],
+   "kilo-code.new.language": "en",
+   "[json]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+   },
+   "typescript.experimental.useTsgo": true,
+   "terminal.integrated.fontLigatures.enabled": true,
+   "security.workspace.trust.untrustedFiles": "open",
+   // UI Setting:
+   // TypeScript (Native Preview) > Use Tsgo
+   // "typescript.experimental.useTsgo": true
+
+   // "[prisma]": {
+   //    "editor.defaultFormatter": "Prisma.prisma",
+   // },
+}
